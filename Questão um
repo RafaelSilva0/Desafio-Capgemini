@@ -1,0 +1,28 @@
+package questaoum;
+
+import java.util.Scanner;
+
+public class QuestaoUm {
+    
+    public static String exe(int degraus){
+        
+        String X = " ";
+        
+        for(int a = 0; a <= degraus; a = a +1){
+            X += " ".repeat(degraus - a) + "*".repeat(a) + "\n";
+        }
+        return X;
+    }
+    public static void main(String[] args) {
+        
+        Scanner type = new Scanner(System.in);
+        String ESC;
+        
+        System.out.print("Digite quantos degraus tera a escada: ");
+        int degraus = type.nextInt();
+        ESC = exe(degraus);
+        
+        System.out.println(ESC)    
+    }
+    
+}
