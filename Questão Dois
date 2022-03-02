@@ -28,6 +28,7 @@ public class QuestaoDois {
 		A += 1;
 	}
 	if (T + A >= 6) {
+	        A += 1;
 		return A;
 	} else {
             int B = (6 - T);
@@ -48,6 +49,7 @@ public class QuestaoDois {
             System.out.println("Sua senha é valida!");
         } else{
             System.out.println("Sua senha não é valida!");
-    }
+	     System.out.println("A senha Falta " + V + " requsitos");
+        }
     } 
 }
