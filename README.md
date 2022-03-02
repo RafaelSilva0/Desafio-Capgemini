@@ -1,10 +1,10 @@
 # Desafio-Capgemini
 # informações:
 
-os algoritomos foram desenvolvidos em limguagem java.
+os algoritomos foram desenvolvidos em linguagem java.
 
-Para abrir as ques é nessecario ter o jdk instalado
+Para abrir as questões é necessario ter o jdk instalado
 
-Utilizei o IDE NetBeans 12.6 para escrever o codigo 
+Utilizei o IDE NetBeans 12.6 para escrever o codigo! 
 
 
