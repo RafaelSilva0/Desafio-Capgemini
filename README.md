@@ -1,7 +1,7 @@
 # Desafio-Capgemini
 # informações:
 
-os algoritomos foram desenvolvidos em linguagem java.
+Os algoritomos foram desenvolvidos em linguagem java.
 
 Para abrir as questões é necessario ter o jdk instalado
 
