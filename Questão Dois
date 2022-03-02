@@ -1,0 +1,53 @@
+package questaodois;
+        
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class QuestaoDois {
+   
+    public static Integer Verificar(String senha){
+    
+        int T = senha.length();
+        int A = 0;
+        
+        boolean minuscula = Pattern.matches("^(?=.*[a-z]).+$", senha),
+                      maiuscula = Pattern.matches("^(?=.*[A-Z]).+$", senha),
+			digito = Pattern.matches("^(?=.*\\d).+$", senha),
+			especial = Pattern.matches("^(?=.*[-+_!@#$%^&*.,?]).+$", senha); 
+        
+        if (minuscula == false) {
+		A += 1;
+	}
+	if (maiuscula == false) {
+		A += 1;
+	}
+	if (digito == false) {
+		A += 1;
+	}
+	if (especial == false) {
+		A += 1;
+	}
+	if (T + A >= 6) {
+		return A;
+	} else {
+            int B = (6 - T);
+		return B;
+	}
+    } 
+    public static void main(String[] args) {
+        
+        Scanner type = new Scanner(System.in);
+        String senha;
+        int V;
+   
+        System.out.print("Digite sua senha: ");
+        senha = type.next();
+        V = Verificar(senha);
+        
+        if(V<=0){
+            System.out.println("Sua senha é valida!");
+        } else{
+            System.out.println("Sua senha não é valida!");
+    }
+    } 
+}
